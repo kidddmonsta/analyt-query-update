@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AnalytQueryBuilder</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write(decodeURIComponent('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
+    <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/19.2.7/css/dx.common.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/19.2.7/css/dx.light.css"/>
+    <script src="https://cdn3.devexpress.com/jslib/19.2.7/js/dx.all.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="https://cdn3.devexpress.com/jslib/19.2.7/js/localization/dx.messages.ru.js"></script>
+    <script src="localization.js"></script>
+    <script src="config.js"></script>
+    <script src="index.js"></script>
+
+</head>
+<body class="dx-viewport">
+<div class="container">
+    <div id="form">
+        <div class="dx-fieldset">
+            <h3>Создание аналитического запроса</h3>
+            <div class="dx-field">
+                <h3>Общие настройки</h3>
+                <div class="dx-field-label">Название</div>
+                <div class="dx-field-value">
+                    <div id="analytQueryName"></div>
+                </div>
+            </div>
+
+            <div class="dx-field">
+                <div class="dx-field-label">Выберите индикатор:</div>
+                <div class="dx-field-value">
+                    <div id="indicator-select"></div>
+                </div>
+            </div>
+
+
+            <div class="dx-field">
+                <div class="dx-field-label">Факты</div>
+                <div class="dx-field-value">
+                    <div id="measures"></div>
+                </div>
+            </div>
+
+            <div class="dx-field">
+                <div class="dx-field-label">Измерения</div>
+                <div class="dx-field-value">
+                    <div id="dimensions"></div>
+                </div>
+            </div>
+            <!--<div class="dx-field">
+                <div class="dx-field-label">Фильтр</div>
+                <div class="dx-field-value">
+                    &lt;!&ndash;<div id="filters"></div>&ndash;&gt;
+                    <div id="filter-1"></div>
+                    <div id="operand-1"></div>
+                    <div id="values-1"></div>
+                </div>
+            </div>-->
+            <div class="dx-field">
+                <div class="dx-field-label">Фильтры</div>
+                <div class="dx-field-value">
+                    <div id="custom-filters">
+                        <div id="add-filter"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Предварительные фильтры</div>
+                <div class="dx-field-value">
+                    <div id="preFilters"></div>
+                </div>
+            </div>
+            <div class="dx-field">
+                <h3>Измерения времени</h3>
+                <div class="dx-field-label">Измерение времени:</div>
+                <div class="dx-field-value">
+                    <div id="select-time-dimentions"></div>
+                </div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Начало периода:</div>
+                <div class="dx-field-value">
+                    <div id="select-timeStart"></div>
+                </div>
+            </div>
+
+            <div class="dx-field">
+                <div class="dx-field-label">Конец периода:</div>
+                <div class="dx-field-value">
+                    <div id="select-timeFinish"></div>
+                </div>
+            </div>
+
+            <div class="dx-field">
+                <div class="dx-field-label">Гранулярность</div>
+                <div class="dx-field-value">
+                    <div id="select-granularity"></div>
+                </div>
+            </div>
+
+            <div id="button"></div>
+            <div id="test"></div>
+            <div id="get-analyt-query"></div>
+            <div id="popup"></div>
+            <div id="analytQueryResult"></div>
+            <div id="grid"></div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
